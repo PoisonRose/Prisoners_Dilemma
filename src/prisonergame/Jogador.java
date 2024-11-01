@@ -51,9 +51,7 @@ public abstract class Jogador {
 		pilhaDeJogadas.clear();
 	}
 	
-	public int tomarDecisao(int i) {
-		return -1;
-	}
+	abstract public int tomarDecisao(int i);
 	
 	public void listarJogada(int jogada, int iteracao) {
 		pilhaDeJogadas.push(jogada);

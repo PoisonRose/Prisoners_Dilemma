@@ -4,12 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Jogador[] linha = new Jogador[5];
-		int n = linha.length;
 		
-		Jogador[] coluna = new Jogador[5];
-		
-		String[] nomes = new String[5];
 		
 		Jogador traicoeiro1 = new Traicoeiro();
 		Jogador traicoeiro2 = new Traicoeiro();
@@ -22,26 +17,14 @@ public class Main {
 		Jogador OPOsuspeito1 = new OPOSuspeito();
 		Jogador OPOsuspeito2 = new OPOSuspeito();
 		
+		Jogador[] linha = new Jogador[] {traicoeiro1,cooperativo1,aleatorio1,titfortat1,OPOsuspeito1};
+		int n = linha.length;
+		
+		Jogador[] coluna = new Jogador[] {traicoeiro2,cooperativo2,aleatorio2,titfortat2,OPOsuspeito2};
+		
+		String[] nomes = new String[] {"traicoeiro","cooperativo","aleatorio","OlhoPorOlho","Suspeito"};
 		
 		Jogo jogo = new Jogo();
-		
-		linha[0]=traicoeiro1;
-		linha[1]=cooperativo1;
-		linha[2]=aleatorio1;
-		linha[3]=titfortat1;
-		linha[4]=OPOsuspeito1;
-		
-		coluna[0]=traicoeiro2;
-		coluna[1]=cooperativo2;
-		coluna[2]=aleatorio2;
-		coluna[3]=titfortat2;
-		coluna[4]=OPOsuspeito2;
-		
-		nomes[0]="traicoeiro";
-		nomes[1]="cooperativo";
-		nomes[2]="aleatorio";
-		nomes[3]="OlhoPorOlho";
-		nomes[4]="Suspeito";
 		
 		for (int i=0;i<n;i++) {
 			for (int j=0;j<n;j++) {
